@@ -10,7 +10,7 @@ class MovingAverageWindow
     int periodsOfDataCollected;
 	
   public:
-  
+
 	//Public Constructor - Creates dynamically allocated objects
     void MovingAverageWindow(int size)
 	{
@@ -26,27 +26,24 @@ class MovingAverageWindow
 	  delete AverageWindow;
 	}
 	
-	// Can we consolidate the if-else? 
 	float CalculateAverage()
 	{
 	  float sum = 0;
+	  int periodsToAnalyze = 0;
 	  if (periodsOfDataCollected < sizeWindow)
 	  {
-	    for (int i = 0; i < sizeWindow; i++)
-		{
-		  sum += AverageWindow[i];
-		}
-		
-		return sum / periodsOfDataCollected;
+	    periodsToAnalyze = periodsOfDataCollected;
 	  }
 	  else
 	  {
-	    for (int i = 0; i < sizeWindow; i++)
-		{
-		  sum += AverageWindow[i];
-		}
-		return sum / sizeWindow;
+	    periodsToAnalyze = sizeWindow;
 	  }
+	  
+	  for (int i = 0; i < periodsToAnalyze; i++)
+	  {
+	  sum += AverageWindow[i];
+	  }
+	  return sum / periodsToAnalyze;
 	}
 	
 	// This function adds a more recent datapoint to the moving window and will overwrite the existing value if applicable
