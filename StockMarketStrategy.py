@@ -71,5 +71,3 @@ print('Random Data: ', data)
 strategy = CalculateBestBuySellTimes(data)
 print('Buy at Index: ', strategy['BuyIndex'], 'at price: ', data[strategy['BuyIndex']])
 print('Sell at Index: ', strategy['SellIndex'], 'at price: ', data[strategy['SellIndex']])
-
-print('Random Data at the end: ', data)
