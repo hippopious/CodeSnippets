@@ -83,3 +83,53 @@ random_value = ''.join(random_value_list)
 
 result = FindNearestHexPair(random_value)
 print('Processed hex sequence: {0}'.format(result))
+
+# C:\repos\CodeSnippets>python NearestIdenticalHexPair.py
+# Input is: 561E48
+# Current Value being operated on is: 56. Dec: 86
+# Lower value to compare against: 55. Dec: 85
+# Higher value to compare against: 66. Dec: 102
+# Current Value being operated on is: 1E. Dec: 30
+# Lower value to compare against: 11. Dec: 17
+# Higher value to compare against: 22. Dec: 34
+# Current Value being operated on is: 48. Dec: 72
+# Lower value to compare against: 44. Dec: 68
+# Higher value to compare against: 55. Dec: 85
+# Processed hex sequence: 552244
+#
+# C:\repos\CodeSnippets>python NearestIdenticalHexPair.py
+# Input is: 04523F
+# Current Value being operated on is: 04. Dec: 4
+# Current Value being operated on is: 52. Dec: 82
+# Lower value to compare against: 44. Dec: 68
+# Higher value to compare against: 55. Dec: 85
+# Current Value being operated on is: 3F. Dec: 63
+# Lower value to compare against: 33. Dec: 51
+# Higher value to compare against: 44. Dec: 68
+# Processed hex sequence: 005544
+#
+# C:\repos\CodeSnippets>python NearestIdenticalHexPair.py
+# Input is: DA55D1
+# Current Value being operated on is: DA. Dec: 218
+# Lower value to compare against: cc. Dec: 204
+# Higher value to compare against: DD. Dec: 221
+# Current Value being operated on is: 55. Dec: 85
+# Lower value to compare against: 44. Dec: 68
+# Higher value to compare against: 55. Dec: 85
+# Current Value being operated on is: D1. Dec: 209
+# Lower value to compare against: cc. Dec: 204
+# Higher value to compare against: DD. Dec: 221
+# Processed hex sequence: DD55cc
+#
+# C:\repos\CodeSnippets>python NearestIdenticalHexPair.py
+# Input is: 1A8E62
+# Current Value being operated on is: 1A. Dec: 26
+# Lower value to compare against: 11. Dec: 17
+# Higher value to compare against: 22. Dec: 34
+# Current Value being operated on is: 8E. Dec: 142
+# Lower value to compare against: 88. Dec: 136
+# Higher value to compare against: 99. Dec: 153
+# Current Value being operated on is: 62. Dec: 98
+# Lower value to compare against: 55. Dec: 85
+# Higher value to compare against: 66. Dec: 102
+# Processed hex sequence: 228866
