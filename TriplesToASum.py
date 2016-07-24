@@ -33,6 +33,9 @@ for x in range(0, 100):
 some_sample_numbers.sort()
 sum_target = random.randint(0, 100)
 
+sum_target = 253
+some_sample_numbers = [1, 3, 5, 100, 150]
+
 print(some_sample_numbers)
 print('Target Sum:', sum_target)
 
